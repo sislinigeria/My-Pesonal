@@ -119,6 +119,8 @@ footer {
 
 .subheading {
     text-align: center;
+    margin-bottom: 0;
+    margin-top: 25px;
 }
 
 .flex-container {
@@ -131,7 +133,19 @@ footer {
     padding: 20px;
     font-size: 15px;
 }
+    h3 {
+        text-align: center;
+    }
+    p {
+        text-align: justify;
+    }
 
 img {
     width: 100%
+}
+
+@media screen and (max-width: 480px) {
+    .flex-container {
+        display: block;
+    }
 }
