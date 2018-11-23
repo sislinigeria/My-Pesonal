@@ -117,6 +117,9 @@ footer {
     padding: 15px;
 }
 
+/*
+ * Content
+ */
 .subheading {
     text-align: center;
     margin-bottom: 0;
@@ -144,8 +147,62 @@ img {
     width: 100%
 }
 
+/* 
+ * Contact Us section
+ */
+.form-container {
+    display: flex;
+    width: 100%;
+}
+
+.form-container > div {
+    margin: 10px;
+    width:100%;
+    padding:20px;
+}
+ input[type=text], input[type=email], textarea {
+     width:100%;
+     padding:12px;
+     margin-top: 6px;
+     margin-bottom: 16px;
+     border:1px solid #c9c9c9;
+     border-radius: 3px;
+     box-sizing: border-box;
+ }
+
+ input[type=submit] {
+     background-color: #660551;
+     color: white;
+     padding: 11px 20px;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+ }
+
+ input[type=submit]:hover {
+     background-color: #f37ad9;
+     color:black;
+ }
+
+ .myform {
+     border-radius: 6px;
+     background-color: gray;
+     padding: 20px;
+ }
+
+ .contact {
+     font-size: 3em;
+ }
+/* 
+ * Media Query for Screen size 480px
+ */ 
+
 @media screen and (max-width: 480px) {
     .flex-container {
+        display: block;
+    }
+
+    .form-container {
         display: block;
     }
 }
